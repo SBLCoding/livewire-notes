@@ -17,6 +17,7 @@ class CreateNotesTable extends Migration
             $table->id();
             $table->string('title', 400);
             $table->longText('description');
+            $table->string('color', 100);
             $table->timestamps();
         });
     }
